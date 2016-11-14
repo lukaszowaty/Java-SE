@@ -30,14 +30,13 @@ public abstract class User implements Serializable {
 		this.pesel = pesel;
 	}
 	
-	//Constructor
+	//Konstruktor
 	public User(String firstName, String lastName, String pesel) {
 		super();
 		setFirstName(firstName);
 		setLastName(lastName);
 		setPesel(pesel);
 	}
-	//Methods
 	@Override
 	public int hashCode() {
 		final int prime = 31;
