@@ -11,29 +11,23 @@ public class Library implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 2995794334600947814L;
-	//ZMIENIONY TYP
     private Map<String, Publication> publications;
-    //DODANE
     private Map<String, LibraryUser> users;
      
     //zwracamy rozmiar mapy
     public int getPublicationsNumber() {
         return publications.size();
     }
-    //ZMIENIONY TYP
     public Map<String, Publication> getPublications() {
         return publications;
     }
- 
-    //DODANY GETTER
+
     public Map<String, LibraryUser> getUsers() {
         return users;
     }
      
     public Library() {
-        //ZMIENIONY TYP
         publications = new HashMap<>();
-        //DODANE
         users = new HashMap<>();
     }
      
@@ -44,25 +38,21 @@ public class Library implements Serializable{
     public void addMagazine(Magazine magazine) {
         addPublication(magazine);
     }
-     
-    //DODANE
+	
     public void addUser(LibraryUser user) {
         users.put(user.getPesel(), user);
     }
      
-    //ZMIENIONA LOGIKA
     public void removePublication(Publication pub) {
         if(publications.containsValue(pub)) {
             publications.remove(pub.getTitle());
         }
     }
      
-    //ZMIENIONA LOGIKA I USUNIĘCIE ZWRACANEGO WYJATKU
     private void addPublication(Publication pub) {
         publications.put(pub.getTitle(), pub);
     }
-     
-    //ZMIENIONA LOGIKA PĘTLI
+	
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
