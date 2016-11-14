@@ -7,9 +7,6 @@ import java.util.Map;
 
 public class Library implements Serializable{
     
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 2995794334600947814L;
     private Map<String, Publication> publications;
     private Map<String, LibraryUser> users;
