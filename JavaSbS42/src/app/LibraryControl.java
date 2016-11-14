@@ -54,7 +54,6 @@ public class LibraryControl {
                 case PRINT_MAGAZINES:
                     printMagazines();
                     break;
-                //DODANE
                 case ADD_USER:
                     addUser();
                     break;
@@ -99,13 +98,11 @@ public class LibraryControl {
         LibraryUtils.printMagazines(library);
     }
      
-    //DODANE
     private void addUser() {
         LibraryUser user = dataReader.readAndCreateLibraryUser();
         library.addUser(user);
     }
      
-    //DODANE
     private void printUsers() {
         LibraryUtils.printUsers(library);
     }
