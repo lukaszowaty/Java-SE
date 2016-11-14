@@ -5,9 +5,6 @@ import java.util.List;
 
 public class LibraryUser extends User {
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -8947711557376301730L;
 	
 	private List<Publication> publicationHistory;
