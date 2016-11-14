@@ -83,7 +83,6 @@ public class DataReader {
         return new Magazine(title, publisher, language, year, month, day);
     }
 	
-	//DODANE
     public LibraryUser readAndCreateLibraryUser() {
         System.out.println("Imię: ");
         String firstName = sc.nextLine();
